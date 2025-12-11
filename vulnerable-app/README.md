@@ -16,7 +16,7 @@ Purpose-built sample to generate Safety findings for the SARIF upload workflow.
 - Arbitrary code execution via `eval`.
 
 ## Running locally
-```
+```bash
 python -m pip install safety
 safety scan --file requirements.txt --output json --continue-on-error
 ```
