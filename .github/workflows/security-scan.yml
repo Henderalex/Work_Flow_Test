@@ -33,7 +33,7 @@ jobs:
           safety scan --file requirements.txt --output json --continue-on-error > ../safety-output.json
 
       - name: Convert Safety output to SARIF
-        uses: Henderalex/safety-sarif-action@v1
+        uses: Henderalex/safety-sarif-action@v2
         with:
           input_file: safety-output.json
           output_file: safety.sarif
